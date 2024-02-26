@@ -1,0 +1,12 @@
+[Unit]
+Description=Servicio para verificar espacio en disco cada 10 segundos
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /ruta/a/tarea5.py
+Restart=always
+User=antonio
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
